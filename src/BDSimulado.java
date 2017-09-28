@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class BDSimulado {
@@ -145,7 +146,7 @@ public class BDSimulado {
 		 //percorre a lista de postos
 		 for (int i = 0; i < this.posto.size(); i++) {
 			 if (this.posto.get(i).getCapacidade() >= qtdeComida) {
-				this.posto.get(i).getOng().getNome();
+				resultado = this.posto.get(i).getOng().getNome();
 			}
 			
 		}

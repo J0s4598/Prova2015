@@ -10,6 +10,7 @@ public class Principal {
 		System.out.println(bd.getNumONGPorEstado("DF"));
 		/*System.out.println(bd.getPostosPorCapacidade(100));*/
 		System.out.println(bd.getPostosVegetarianos());
+		System.out.println(bd.getONGQueAtende(500));
 		
 		
 		//Imprimi capacidade com o codigo so
