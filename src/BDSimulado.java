@@ -153,8 +153,22 @@ public class BDSimulado {
 		 return resultado;
 	 }
 	 
-	 
-	 
+	 //metodo 
+	 public String getONGQuePorSexo (int qtdeMascu, int qtdeFemi, int qtdeCrian){
+		 String resultado = "";
+		 double qtdeC1 = qtdeMascu * 0.5;
+		 double qtdeC2 = qtdeFemi * 0.3;
+		 double qtdeC3 = qtdeCrian * 0.15;
+		 double qtdeComida = (qtdeC1) + (qtdeC2) + (qtdeC3);
+		 
+		 //
+		 for (int i = 0; i < this.posto.size(); i++) {
+			if (this.posto.get(i).getCapacidade() >= qtdeComida) {
+				resultado = this.posto.get(i).getOng().getNome();
+			}
+		}
+		 return resultado;
+	 }
 	 
 	 
 	 
